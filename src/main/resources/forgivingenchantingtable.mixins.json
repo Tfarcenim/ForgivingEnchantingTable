@@ -1,11 +1,12 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "tfar.forgivingenchantingtable.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "EnchantingTableContainerMixin",
+    "EnchantingTableBlockMixin"
   ],
   "client": [
-    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1
