@@ -10,7 +10,7 @@ import tfar.forgivingenchantingtable.MixinHooks;
 
 @Mixin(EnchantmentScreenHandler.class)
 abstract class EnchantingTableContainerMixin {
-	@Redirect(method = "*(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)V",
+	@Redirect(method = "method_17411(Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)V",
 	at = @At(value = "INVOKE",target = "Lnet/minecraft/world/World;isAir(Lnet/minecraft/util/math/BlockPos;)Z"))
 	private boolean tweakBlocking(World world, BlockPos pos){
 		return MixinHooks.canPass(world,pos);
