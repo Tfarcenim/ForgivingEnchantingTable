@@ -4,9 +4,10 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "EnchantingTableContainerMixin",
-    "EnchantingTableBlockMixin"
+    "BlockTagsAccessor"
   ],
   "client": [
+    "EnchantingTableBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
